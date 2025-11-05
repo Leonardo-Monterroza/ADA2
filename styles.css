@@ -88,6 +88,12 @@ body {
     padding: 10px 0;
 }
 
+#titulosofrecimientos{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 .cajaoservicios{
     flex: 0 1 calc(25% - 20px); /* intenta 4 por fila en pantallas grandes */
     max-width: 300px;
@@ -116,4 +122,36 @@ body {
     .cajaoservicios{
         flex: 0 1 100%;
     }
+}
+
+#caja1evidencia{
+    background-image: url("Imagenes/1.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+#caja2evidencia{
+    background-image: url("Imagenes/2.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+#caja3evidencia{
+    background-image: url("Imagenes/3.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
+
+#caja4evidencia{
+    background-image: url("Imagenes/5.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
 }
