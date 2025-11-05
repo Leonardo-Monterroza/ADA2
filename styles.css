@@ -53,6 +53,11 @@ body {
     color: inherit;
 }
 
+.baner{
+    width: 100%;
+    height: auto;
+}
+
 .banner-img{
     width: 100%;
     height: auto;
@@ -92,6 +97,7 @@ body {
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .cajaoservicios{
