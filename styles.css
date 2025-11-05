@@ -104,7 +104,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
-    margin: 0;                  /* el gap ya controla el espacio */
+    margin: 10px;                  /* el gap ya controla el espacio */
     color: white;
     box-sizing: border-box;
 }
