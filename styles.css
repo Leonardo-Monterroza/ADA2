@@ -53,15 +53,30 @@ body {
     color: inherit;
 }
 
+/* ...existing code... */
 .baner{
     width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center; /* centra el contenido */
+    background: #F2F2F2;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+
+.baner-inner{
+    width: 100%;
+    max-width: 1200px; /* limita la anchura del contenido en pantallas grandes */
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .banner-img{
     width: 100%;
-    height: auto;
+    height: auto;    /* mantiene la proporción */
+    display: block;
+    object-fit: contain; /* no recorta, solo ajusta */
 }
+/* ...existing code... */
 
 #logoletras{
     text-align: center;
