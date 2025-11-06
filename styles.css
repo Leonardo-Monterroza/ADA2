@@ -120,6 +120,7 @@ body {
     object-fit: cover;
     border-radius: 10px;
     display: block;
+    box-shadow: 0 0 10px #254483;
 }
 
 /* caption debajo de la imagen */
