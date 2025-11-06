@@ -83,81 +83,69 @@ body {
     font-weight: bold;
 }
 
-.ofrecimientos > div{
-    background: linear-gradient(#F2F2F2, #c8b2df);
+#muestra-actividades{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/* ...existing code... */
+
+/* contenedor ya es flex-wrap; cada item será una columna con imagen arriba y texto abajo */
+.boximagenes{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    gap: 20px;
+    padding: 16px;
     box-sizing: border-box;
-    padding: 10px 0;
+    background: linear-gradient(transparent,#dac9eb);
 }
 
-#titulosofrecimientos{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.cajaoservicios{
-    flex: 0 1 calc(25% - 20px); /* intenta 4 por fila en pantallas grandes */
-    max-width: 300px;
-    min-width: 180px;           /* evita que se hagan demasiado pequeñas */
-    height: 400px;
-    width: 300px;
+/* cada tarjeta: imagen encima y caption debajo */
+.box-item{
+    flex: 1 1 calc(25% - 20px); /* 4 por fila en pantallas grandes */
+    max-width: calc(25% - 20px);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: black;
-    margin: 10px;                  /* el gap ya controla el espacio */
-    color: white;
     box-sizing: border-box;
 }
 
-/* Responsive: en pantallas medianas usar 2 por fila */
+/* imagen responsiva dentro de la tarjeta */
+.box-item .imagen{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* caption debajo de la imagen */
+.box-item .caption{
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 16px;
+    color: #222;
+}
+
+/* tablet: 2 por fila */
 @media (max-width: 900px){
-    .cajaoservicios{
-        flex: 0 1 calc(48% - 10px);
-        max-width: none;
+    .box-item{
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
+    .box-item .imagen{ height: 200px; }
 }
 
-/* En móvil: 1 por fila */
+/* móvil: 1 por fila */
 @media (max-width: 480px){
-    .cajaoservicios{
-        flex: 0 1 100%;
+    .box-item{
+        flex: 1 1 100%;
+        max-width: 100%;
     }
+    .box-item .imagen{ height: 180px; }
 }
 
-#caja1evidencia{
-    background-image: url("Imagenes/1.jpg");
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-}
-
-#caja2evidencia{
-    background-image: url("Imagenes/2.jpg");
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-}
-
-#caja3evidencia{
-    background-image: url("Imagenes/3.jpg");
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-}
-
-#caja4evidencia{
-    background-image: url("Imagenes/5.jpg");
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-}
+/* ...existing code... */
