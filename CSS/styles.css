@@ -164,4 +164,25 @@ body {
     .box-item .imagen{ height: 180px; }
 }
 
-/* ...existing code... */
+.footer{
+    background-color: #dac9eb;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.link-iconos{
+    text-decoration: none;
+    color: inherit;
+}
+
+.iconos{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    margin-right: 50px;
+}
+
+#derechos{
+    font-size: 14px;
+    font-style: oblique;
+}
