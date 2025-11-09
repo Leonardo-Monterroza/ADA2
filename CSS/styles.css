@@ -204,6 +204,13 @@ body {
     color: #4970BF;
 }
 
+#boxtexto{
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    text-align: justify;
+}
+
 #boxcontenedor{
     width: 50%;
     margin: auto;
@@ -218,7 +225,7 @@ body {
 #imagenbeneficios{
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: 140px;
     height: auto;
     display: block;
     margin: auto;
@@ -227,8 +234,7 @@ body {
 
 
 .listado{
-    width: 50%;
+    width: 100%;
     height: auto;
     align-items: center;
-    
 }
