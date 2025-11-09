@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #232324;
-    background-color: #F2F2F2;
+    background: linear-gradient(transparent,#dac9eb);
 }
 
 @font-face {
@@ -20,6 +20,7 @@ body {
     padding: 0 16px;
     box-sizing: border-box;
 }
+
 
 .derecha a, #imglogo{
     width: 90px;
@@ -58,7 +59,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center; /* centra el contenido */
-    background: #F2F2F2;
     padding: 12px 0;
     box-sizing: border-box;
 }
@@ -90,7 +90,9 @@ body {
 #mensajebienvenida{
     text-align: center;
     font-size: 18px;
-    margin-top: -5px;
+    margin: 30px;
+    margin-top: 5px;
+    margin-bottom: 80px;
 }
 
 #resalto{
@@ -113,9 +115,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 16px;
+    padding: 6px;
     box-sizing: border-box;
-    background: linear-gradient(transparent,#dac9eb);
 }
 
 /* cada tarjeta: imagen encima y caption debajo */
@@ -165,7 +166,6 @@ body {
 }
 
 .footer{
-    background-color: #dac9eb;
     text-align: center;
     padding: 20px 0;
 }
@@ -184,4 +184,31 @@ body {
 #derechos{
     font-size: 14px;
     font-style: oblique;
+}
+
+#titulonosotros{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.boxtextos{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+#boxvision{
+    justify-content: justify;
+    text-align: justify;
+    display: flex;
+}
+
+#mision-img{
+    height: 400px;
+    width: auto;
+    margin: 20px;
 }
