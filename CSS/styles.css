@@ -111,6 +111,7 @@ body {
 
 /* contenedor ya es flex-wrap; cada item será una columna con imagen arriba y texto abajo */
 .boximagenes{
+    ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -225,7 +226,7 @@ body {
 #imagenbeneficios{
     align-items: center;
     justify-content: center;
-    width: 140px;
+    width: 100%;
     height: auto;
     display: block;
     margin: auto;
@@ -237,4 +238,13 @@ body {
     width: 100%;
     height: auto;
     align-items: center;
+}
+
+#boximagen{
+    height: 300px;
+    width: auto;
+    background-color: turquoise;
+    background-image: url(../Imagenes/475270595_1060949642712072_3939578319302466397_n.jpg);
+    background-size: cover;
+    background-position: center;
 }
