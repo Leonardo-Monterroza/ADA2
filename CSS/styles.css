@@ -167,7 +167,7 @@ body {
 
 .footer{
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .link-iconos{
@@ -178,7 +178,7 @@ body {
 .iconos{
     width: 30px;
     height: 30px;
-    margin: 30px;
+    margin: 10px;
 }
 
 #derechos{
@@ -200,4 +200,15 @@ body {
     margin: auto;
     text-align: justify;
     font-size: 18px;
+}
+
+
+#imagenbeneficios{
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 10px #864c8b;
 }
