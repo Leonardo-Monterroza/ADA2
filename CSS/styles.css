@@ -194,21 +194,41 @@ body {
     font-family: Alina2;
     color: #4970BF;
 }
+#titulobeneficios{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Alina2;
+    color: #4970BF;
+}
 
-.boxtextos{
-    width: 90%;
+#boxcontenedor{
+    width: 50%;
     margin: auto;
-    text-align: justify;
+    display: flex;
     font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 
 #imagenbeneficios{
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 250px;
     height: auto;
     display: block;
     margin: auto;
     box-shadow: 0 0 10px #864c8b;
+}
+
+
+.listado{
+    width: 50%;
+    height: auto;
+    align-items: center;
+    
 }
