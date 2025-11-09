@@ -188,9 +188,11 @@ body {
 
 #titulonosotros{
     text-align: center;
-    font-size: 36px;
+    font-size: 60px;
     font-weight: bold;
     width: 100%;
+    font-family: Alina2;
+    color: #4970BF;
 }
 
 .boxtextos{
@@ -198,17 +200,4 @@ body {
     margin: auto;
     text-align: justify;
     font-size: 18px;
-
-}
-
-#boxvision{
-    justify-content: justify;
-    text-align: justify;
-    display: flex;
-}
-
-#mision-img{
-    height: 400px;
-    width: auto;
-    margin: 20px;
 }
