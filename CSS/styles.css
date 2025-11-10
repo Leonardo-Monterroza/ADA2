@@ -195,6 +195,13 @@ body {
     font-family: Alina2;
     color: #4970BF;
 }
+
+.boxtextos{
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    text-align: justify;
+}
 #titulobeneficios{
     text-align: center;
     font-size: 60px;
@@ -230,20 +237,20 @@ body {
     height: auto;
     display: block;
     margin: auto;
-    box-shadow: 0 0 10px #864c8b;
 }
 
 
 .listado{
-    width: 100%;
-    height: auto;
-    align-items: center;
+    width: auto;
+    height: 100%;
+    text-align: left;
+    margin: auto;
+    line-height: 2;    
 }
 
 #boximagen{
     height: 300px;
     width: auto;
-    background-color: turquoise;
     background-image: url(../Imagenes/475270595_1060949642712072_3939578319302466397_n.jpg);
     background-size: cover;
     background-position: center;
