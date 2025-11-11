@@ -313,3 +313,54 @@ body {
     }
 }
 /* ...existing code... */
+
+
+
+form {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6a4bc2;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background: #6a4bc2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #8a6be0;
+}

@@ -40,25 +40,40 @@
         Te dejamos todos nuestros números de contacto para que te comuniques con
         nosotros, pero también puedes dejarnos tu número y nosotros te llamamos.
       </p>
-      <div class="datoscontactobox">
-        <div class="formcontacto">
-          <label for="textbox">Nombre:</label>
-          <input class="boxinputs" type="text" id="textbox" name="text" />
-          <label for="phonebox">Teléfono:</label>
-          <input class="boxinputs" type="number" id="phonebox" name="phone" />
-          <label for="Motivo">Motivo</label>
-          <input class="boxinputs" type="text" id="Motivo" name="Motivo" />
-          <button class="boxinputs" type="submit">Enviar</button>
-        </div>
-        <div class="formcontacto">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ratione
-            possimus quisquam quibusdam repellat magni consequuntur, ex nemo?
-            Blanditiis nostrum perferendis asperiores qui vero suscipit ducimus
-            similique porro deleniti ratione!
-          </p>
-        </div>
-      </div>
+<form id="contact-form">
+  <h2>Contáctanos</h2>
+
+  <label>Nombre</label>
+  <input type="text" name="user_name" placeholder="Tu nombre" required>
+
+  <label>Correo electrónico</label>
+  <input type="email" name="user_email" placeholder="Tu correo" required>
+
+  <label>Mensaje</label>
+  <textarea name="message" placeholder="Escribe tu mensaje..." required></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+
+<!-- Script de EmailJS -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("ZQOULeUHKiZRoUltB"); // tu Public Key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_o7gjurl', 'template_l8895fd', this)
+      .then(function() {
+        alert("✅ ¡Mensaje enviado con éxito!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("❌ Error al enviar el mensaje: " + JSON.stringify(error));
+      });
+  });
+</script>
 <!-- pega en el lugar donde tienes el mapa (reemplaza el bloque actual) -->
 <div class="boxmapa">
   <div class="map-wrapper">
@@ -68,5 +83,8 @@
   </div>
 </div>
     </div>
+
+
+
   </body>
 </html>
