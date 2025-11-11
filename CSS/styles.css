@@ -111,7 +111,6 @@ body {
 
 /* contenedor ya es flex-wrap; cada item será una columna con imagen arriba y texto abajo */
 .boximagenes{
-    ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -255,3 +254,62 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.datoscontactobox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.formcontacto{
+    width: 80%;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #b6e0b5;
+}
+
+.boxinputs{
+    margin: 5px;
+}
+
+
+/* ...existing code... */
+.boxmapa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* contenedor que limita ancho y mantiene proporción 16:9 */
+.map-wrapper{
+    width: 100%;
+    max-width: 700px;      /* cambia a 800/1000 según quieras */
+    aspect-ratio: 16 / 9;  /* mantiene la relación de aspecto */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* iframe ocupa todo el wrapper sin deformarse */
+#mapa{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* responsive: menos ancho en pantallas muy pequeñas */
+@media (max-width: 480px){
+    .map-wrapper{
+        max-width: 100%;
+        aspect-ratio: 4 / 3; /* opcional: mayor alto en móvil */
+    }
+}
+/* ...existing code... */
