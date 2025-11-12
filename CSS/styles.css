@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #232324;
-    background: linear-gradient(transparent,#aac8eb);
+    background: linear-gradient( #fcfdff,#aac8eb);
 }
 
 @font-face {
@@ -75,6 +75,8 @@ body {
     height: auto;    /* mantiene la proporción */
     display: block;
     object-fit: contain; /* no recorta, solo ajusta */
+    border-radius: 20px;
+    box-shadow: 0 0 5px #4970BF;
 }
 /* ...existing code... */
 
@@ -87,12 +89,20 @@ body {
     color: #4970BF;
     font-style: normal;
 }
+
+.bienvenida{
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 30px;
+}
+
 #mensajebienvenida{
     text-align: center;
     font-size: 18px;
     margin: 30px;
     margin-top: 5px;
     margin-bottom: 80px;
+    padding-bottom: 15px;
 }
 
 #resalto{
@@ -168,6 +178,9 @@ body {
 .footer{
     text-align: center;
     padding: 10px 0;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 15px;
 }
 
 .link-iconos{
@@ -200,6 +213,9 @@ body {
     margin: auto;
     font-size: 18px;
     text-align: justify;
+    background-color: #fcfdff;
+    padding: 15px;
+    border-radius: 20px;
 }
 #titulobeneficios{
     text-align: center;
@@ -216,17 +232,60 @@ body {
     margin: auto;
     font-size: 18px;
     text-align: justify;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
 }
 
+/* Contenedor centrado y con espacio */
 #boxcontenedor{
-    width: 50%;
-    margin: auto;
-    display: flex;
-    font-size: 18px;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 18px;
+    box-sizing: border-box;
 }
+
+/* Lista en columnas responsivas */
+.listado ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+}
+
+/* Elementos con tarjeta ligera y marcador personalizado */
+.listado ul li{
+    background: #ffffff;
+    padding: 12px 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    line-height: 1.6;
+    font-size: 16px;
+    color: #222;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Bullet personalizado (check) */
+.listado ul li::before{
+    content: "✓";
+    color: #2e8b57; /* color del marcador */
+    font-weight: 700;
+    margin-top: 2px;
+    flex: 0 0 18px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px){
+    .listado ul li{
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+}
+/* ...existing code... */
 
 
 #imagenbeneficios{
@@ -253,12 +312,34 @@ body {
     background-image: url(../Imagenes/475270595_1060949642712072_3939578319302466397_n.jpg);
     background-size: cover;
     background-position: center;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #4970BF;
 }
 
 .datoscontactobox{
     width: 80%;
     margin: auto;
     display: flex;
+}
+
+.titulocontacto{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    width: 100%;
+    font-family: Alina2;
+    color: #4970BF;
+}
+
+.parradocontacto{
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .formcontacto{
@@ -317,50 +398,51 @@ body {
 
 
 form {
-  max-width: 420px;
-  margin: 40px auto;
-  padding: 25px;
-  background: #fafafa;
-  border-radius: 16px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  font-family: 'Poppins', sans-serif;
+    max-width: 420px;
+    margin: 40px auto;
+    background: #fafafa;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    padding: 25px;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #6a4bc2;
+    margin-bottom: 20px;
+    color: #6a4bc2;
+    text-align: center;
 }
 
 label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
 }
 
 input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  resize: none;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
 }
 
 button {
-  margin-top: 20px;
-  width: 100%;
-  background: #6a4bc2;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background 0.3s;
+    width: 100%;
+    background: #6a4bc2;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 20px;
 }
 
 button:hover {
-  background: #8a6be0;
+    background: #8a6be0;
 }
+
