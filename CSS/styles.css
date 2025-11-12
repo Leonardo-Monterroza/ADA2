@@ -213,10 +213,16 @@ body {
     margin: auto;
     font-size: 18px;
     text-align: justify;
-    background-color: #fcfdff;
-    padding: 15px;
-    border-radius: 20px;
 }
+.contenendores{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    padding: 15px;
+}
+
 #titulobeneficios{
     text-align: center;
     font-size: 60px;
