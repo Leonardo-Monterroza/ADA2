@@ -272,7 +272,7 @@ body {
 /* Bullet personalizado (check) */
 .listado ul li::before{
     content: "✓";
-    color: #2e8b57; /* color del marcador */
+    color: #4b0d88; /* color del marcador */
     font-weight: 700;
     margin-top: 2px;
     flex: 0 0 18px;
