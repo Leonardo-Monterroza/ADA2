@@ -210,15 +210,15 @@ body {
 
 .boxtextos{
     width: 80%;
+    height: auto;
     margin: auto;
     font-size: 18px;
-    text-align: justify;
+    text-align: center;
+    align-items: center;
 }
 .contenendores{
     background-color: #fff;
     border-radius: 20px;
-    width: 100%;
-    height: auto;
     margin-top: 35px;
     padding: 15px;
 }
