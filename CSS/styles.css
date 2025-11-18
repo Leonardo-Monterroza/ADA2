@@ -494,6 +494,7 @@ button:hover {
     justify-content: space-between; /* separa los elementos */
     gap: 20px; /* espacio entre ellos */
     margin-bottom: 30px; /* separa filas */
+    margin: 10px;
 }
 
 .contenedor {
