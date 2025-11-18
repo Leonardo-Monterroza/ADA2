@@ -86,7 +86,6 @@ body {
     background-position: center;
     max-width: 1200px; /* limita la anchura del contenido en pantallas grandes */
     padding: 0 16px;
-    border-radius: 20px;
 }
 
 .banner-img{
