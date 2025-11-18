@@ -95,7 +95,6 @@ body {
     height: auto;    /* mantiene la proporción */
     display: block;
     object-fit: contain; /* no recorta, solo ajusta */
-    border-radius: 20px;
     box-shadow: 0 0 5px #4970BF;
 }
 /* ...existing code... */
@@ -354,7 +353,6 @@ body {
     background-image: url(../Imagenes//banerimagen.jpg.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
     box-shadow: 0 0 5px #4970BF;
     margin: 0 auto;
     margin-bottom: 20px;
